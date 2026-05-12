@@ -1,37 +1,43 @@
 # Markdown
 
-This template should help get you started developing with Vue 3 in Vite.
+基于 Vue 3 + Node.js 的 Markdown 编辑器，支持设为系统默认 `.md` 文件打开方式。
 
-## Recommended IDE Setup
+## 技术栈
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **前端**: Vue 3 + Vite
+- **后端**: Node.js
+- **桌面壳**: Electron
 
-## Recommended Browser Setup
+## 功能规划
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Markdown 实时预览
+- 语法高亮
+- 文件打开 / 保存
+- 注册为系统默认 `.md` 打开方式
+- 主题切换
 
-## Customize configuration
+## 项目结构
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+```
+markdown/
+├── src/            # Vue 前端源码
+│   ├── App.vue
+│   ├── main.js
+│   ├── assets/
+│   └── components/
+├── public/         # 静态资源
+├── package.json
+└── vite.config.js
+```
 
-## Project Setup
+## 开发
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+## 构建
 
 ```sh
 npm run build
