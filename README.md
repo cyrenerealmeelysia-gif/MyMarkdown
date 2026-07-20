@@ -1,6 +1,22 @@
 # Markdown Editor
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/latest)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](#)
+[![Electron](https://img.shields.io/badge/Electron-43-47848F?logo=electron&logoColor=white)](https://www.electronjs.org/)
+[![Vue](https://img.shields.io/badge/Vue-3.x-4FC08D?logo=vue.js&logoColor=white)](https://vuejs.org/)
+
 基于 **Electron + Vue 3 + Vite** 的桌面 Markdown 编辑器。支持设为系统默认 `.md` 文件打开方式。
+
+## 下载 / Download
+
+> 最新版本：**v1.0.0** · [查看全部版本](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases)
+
+| 平台 | 架构 | 下载 |
+|------|------|------|
+| 🍎 **macOS** | Apple Silicon (arm64) | [⬇ `Markdown Editor-1.0.0-arm64.dmg`](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/download/v1.0.0/Markdown%20Editor-1.0.0-arm64.dmg) |
+| 🍎 **macOS** | Intel (x64) | [⬇ `Markdown Editor-1.0.0.dmg`](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/download/v1.0.0/Markdown%20Editor-1.0.0.dmg) |
+| 🪟 **Windows** | x64 | [⬇ `Markdown Editor Setup 1.0.0.exe`](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/download/v1.0.0/Markdown%20Editor%20Setup%201.0.0.exe) |
 
 ## 功能
 
