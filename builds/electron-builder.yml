@@ -1,0 +1,86 @@
+appId: com.markdown.editor
+productName: Markdown Editor
+copyright: Copyright © 2026
+
+directories:
+  buildResources: builds
+  output: release
+
+# Disable ASAR — ESM module scripts can't resolve imports from
+# inside ASAR's virtual filesystem via file:// protocol.
+asar: false
+
+files:
+  - dist/**/*
+  - dist-electron/**/*
+
+# Windows
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: builds/icon.png
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+
+# macOS
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: builds/icon.icns
+  category: public.app-category.productivity
+
+dmg:
+  contents:
+    - x: 130
+      y: 220
+    - x: 410
+      y: 220
+      type: link
+      path: /Applications
+
+# Linux
+linux:
+  target:
+    - target: AppImage
+      arch:
+        - x64
+    - target: deb
+      arch:
+        - x64
+  icon: builds/icon.png
+  category: Office
+
+# File associations
+fileAssociations:
+  - ext: md
+    name: Markdown Document
+    description: Markdown source file
+    role: Editor
+  - ext: markdown
+    name: Markdown Document
+    description: Markdown source file
+    role: Editor
+  - ext: mdown
+    name: Markdown Document
+    description: Markdown source file
+    role: Editor
+  - ext: mkd
+    name: Markdown Document
+    description: Markdown source file
+    role: Editor
+  - ext: mdx
+    name: Markdown Document
+    description: Markdown source file
+    role: Editor
+
+# Auto-update via GitHub Releases
+publish:
+  provider: github

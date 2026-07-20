@@ -79,7 +79,7 @@ __screenshots__/
 *.blockmap
 dist/builder-effective-config.yaml
 dist/builder-debug.yml
-electron-builder.yml
+/electron-builder.yml
 
 # Claude Code
 CLAUDE.md
