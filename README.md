@@ -14,9 +14,9 @@
 
 | 平台 | 架构 | 下载 |
 |------|------|------|
-| 🍎 **macOS** | Apple Silicon (arm64) | [⬇ `Markdown Editor-1.0.0-arm64.dmg`](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/download/v1.0.0/Markdown%20Editor-1.0.0-arm64.dmg) |
-| 🍎 **macOS** | Intel (x64) | [⬇ `Markdown Editor-1.0.0.dmg`](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/download/v1.0.0/Markdown%20Editor-1.0.0.dmg) |
-| 🪟 **Windows** | x64 | [⬇ `Markdown Editor Setup 1.0.0.exe`](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/download/v1.0.0/Markdown%20Editor%20Setup%201.0.0.exe) |
+| 🍎 **macOS** | Apple Silicon (arm64) | [⬇ `Markdown Editor-1.0.0-arm64.dmg`](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/download/v1.0.0/Markdown.Editor-1.0.0-arm64.dmg) |
+| 🍎 **macOS** | Intel (x64) | [⬇ `Markdown Editor-1.0.0.dmg`](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/download/v1.0.0/Markdown.Editor-1.0.0.dmg) |
+| 🪟 **Windows** | x64 | [⬇ `Markdown Editor Setup 1.0.0.exe`](https://github.com/cyrenerealmeelysia-gif/MyMarkdown/releases/download/v1.0.0/Markdown.Editor.Setup.1.0.0.exe) |
 
 ## 功能
 
