@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "electron:build": "vite build && electron-builder --config builds/electron-builder.yml",
+    "electron:build": "vite build && electron-builder --config builds/electron-builder.yml --publish never",
     "electron:dev": "vite"
   },
   "dependencies": {
