@@ -1,3 +1,15 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+dist-electron
+
+# Electron
+out
+release
+
 # Logs
 logs
 *.log
@@ -7,16 +19,27 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.DS_Store
-dist
-dist-ssr
+# Coverage
 coverage
-*.local
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 *.suo
 *.ntvs*
@@ -24,16 +47,41 @@ coverage
 *.sln
 *.sw?
 
+# TypeScript
 *.tsbuildinfo
 
+# Lint / Formatting
 .eslintcache
+.stylelintcache
+*.pnp.*
 
-# Cypress
+# Testing
 /cypress/videos/
 /cypress/screenshots/
-
-# Vitest
 __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+~*
+*.bak
+
+# Package lock (uncomment if you prefer exact installs)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Build artifacts
+*.blockmap
+dist/builder-effective-config.yaml
+dist/builder-debug.yml
+electron-builder.yml
+
+# Claude Code
+CLAUDE.md
+.claude/
+.learnings/

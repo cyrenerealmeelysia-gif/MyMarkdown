@@ -1,0 +1,46 @@
+/* === Dark Theme (GitHub dark dimmed) === */
+
+:root,
+[data-theme='light'] {
+  --color-bg: #1e1e2e;
+  --color-bg-secondary: #282840;
+  --color-bg-tertiary: #333350;
+  --color-text: #cdd6f4;
+  --color-text-secondary: #9399b2;
+  --color-text-muted: #6c7086;
+  --color-border: #45475a;
+  --color-border-light: #333350;
+  --color-accent: #89b4fa;
+  --color-accent-hover: #b4d0fb;
+  --color-danger: #f38ba8;
+  --color-toolbar-bg: #282840;
+  --color-toolbar-hover: #333350;
+  --color-toolbar-active: #45475a;
+  --color-statusbar-bg: #282840;
+  --color-resize-handle: #45475a;
+  --color-resize-handle-hover: #89b4fa;
+  --color-scrollbar: #45475a;
+  --color-scrollbar-hover: #585b70;
+}
+
+[data-theme='dark'] {
+  --color-bg: #1e1e2e;
+  --color-bg-secondary: #181825;
+  --color-bg-tertiary: #313244;
+  --color-text: #cdd6f4;
+  --color-text-secondary: #a6adc8;
+  --color-text-muted: #6c7086;
+  --color-border: #45475a;
+  --color-border-light: #313244;
+  --color-accent: #89b4fa;
+  --color-accent-hover: #b4d0fb;
+  --color-danger: #f38ba8;
+  --color-toolbar-bg: #181825;
+  --color-toolbar-hover: #313244;
+  --color-toolbar-active: #45475a;
+  --color-statusbar-bg: #181825;
+  --color-resize-handle: #45475a;
+  --color-resize-handle-hover: #89b4fa;
+  --color-scrollbar: #45475a;
+  --color-scrollbar-hover: #585b70;
+}

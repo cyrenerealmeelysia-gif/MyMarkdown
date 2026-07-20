@@ -1,0 +1,249 @@
+/* ===== GitHub-like Rendered Markdown Styles ===== */
+
+.markdown-preview {
+  padding: 32px 48px;
+  max-width: 860px;
+  margin: 0 auto;
+  color: var(--color-text);
+  line-height: 1.7;
+  word-wrap: break-word;
+}
+
+/* Headings */
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5,
+.markdown-preview h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-text);
+}
+
+.markdown-preview h1 {
+  font-size: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.markdown-preview h2 {
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.markdown-preview h3 { font-size: 1.25em; }
+.markdown-preview h4 { font-size: 1em; }
+.markdown-preview h5 { font-size: 0.875em; }
+.markdown-preview h6 { font-size: 0.85em; color: var(--color-text-secondary); }
+
+/* Paragraphs */
+.markdown-preview p {
+  margin-bottom: 16px;
+}
+
+.markdown-preview p:last-child {
+  margin-bottom: 0;
+}
+
+/* Links */
+.markdown-preview a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.markdown-preview a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+.markdown-preview ul,
+.markdown-preview ol {
+  padding-left: 2em;
+  margin-bottom: 16px;
+}
+
+.markdown-preview li {
+  margin-bottom: 4px;
+}
+
+.markdown-preview li > ul,
+.markdown-preview li > ol {
+  margin-bottom: 0;
+}
+
+/* Task lists */
+.markdown-preview .task-list-item {
+  list-style: none;
+  margin-left: -1.5em;
+}
+
+.markdown-preview .task-list-item input[type='checkbox'] {
+  margin-right: 0.5em;
+}
+
+/* Blockquotes */
+.markdown-preview blockquote {
+  padding: 0 1em;
+  margin-bottom: 16px;
+  color: var(--color-text-secondary);
+  border-left: 4px solid var(--color-border);
+}
+
+.markdown-preview blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* Code */
+.markdown-preview code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: var(--color-bg-secondary);
+  border-radius: 6px;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+}
+
+.markdown-preview pre {
+  padding: 16px;
+  margin-bottom: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: var(--color-bg-secondary);
+  border-radius: 6px;
+  border: 1px solid var(--color-border-light);
+}
+
+.markdown-preview pre code {
+  padding: 0;
+  background: none;
+  font-size: 100%;
+}
+
+/* Shiki-highlighted code blocks — keep existing pre padding + override bg */
+.markdown-preview pre.shiki {
+  background-color: var(--shiki-bg) !important;
+  border-color: var(--color-border);
+}
+
+[data-theme="light"] {
+  --shiki-bg: #f6f8fa;
+}
+
+[data-theme="dark"] {
+  --shiki-bg: #0d1117;
+}
+
+/* Tables */
+.markdown-preview table {
+  width: 100%;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.markdown-preview th {
+  font-weight: 600;
+  background-color: var(--color-bg-secondary);
+}
+
+.markdown-preview tr:nth-child(even) {
+  background-color: var(--color-bg-secondary);
+}
+
+/* Horizontal rule */
+.markdown-preview hr {
+  height: 1px;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--color-border);
+  border: 0;
+}
+
+/* Images */
+.markdown-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Footnotes */
+.markdown-preview .footnotes {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border-light);
+  font-size: 0.9em;
+  color: var(--color-text-secondary);
+}
+
+/* Abbreviations */
+.markdown-preview abbr {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+/* KaTeX math */
+.markdown-preview .katex-display {
+  margin: 16px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-preview .katex-inline .katex {
+  font-size: 1.1em;
+}
+
+/* Mermaid diagrams */
+.markdown-preview .mermaid-diagram {
+  margin: 16px 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.markdown-preview .mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-preview .mermaid-error {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-left: 3px solid #e74c3c;
+  color: #e74c3c;
+  font-size: 0.85em;
+  background: rgba(231, 76, 60, 0.08);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Mark highlight */
+.markdown-preview mark {
+  background-color: #fff3cd;
+  color: inherit;
+  padding: 1px 2px;
+}
+
+/* ── WYSIWYG click-to-edit ──────────────────────────────────── */
+
+/* In WYSIWYG mode, block elements show a hover indicator */
+[data-source-line] {
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.15s;
+}
+
+[data-source-line]:hover {
+  background-color: var(--color-bg-secondary);
+  outline: 1px dashed var(--color-border);
+  outline-offset: 2px;
+}

@@ -1,0 +1,46 @@
+/* === Nord Theme (arctic blue-gray) === */
+
+:root,
+[data-theme='light'] {
+  --color-bg: #eceff4;
+  --color-bg-secondary: #e5e9f0;
+  --color-bg-tertiary: #d8dee9;
+  --color-text: #2e3440;
+  --color-text-secondary: #4c566a;
+  --color-text-muted: #81a1c1;
+  --color-border: #d8dee9;
+  --color-border-light: #e5e9f0;
+  --color-accent: #5e81ac;
+  --color-accent-hover: #81a1c1;
+  --color-danger: #bf616a;
+  --color-toolbar-bg: #e5e9f0;
+  --color-toolbar-hover: #d8dee9;
+  --color-toolbar-active: #c8d0e0;
+  --color-statusbar-bg: #e5e9f0;
+  --color-resize-handle: #d8dee9;
+  --color-resize-handle-hover: #5e81ac;
+  --color-scrollbar: #d8dee9;
+  --color-scrollbar-hover: #81a1c1;
+}
+
+[data-theme='dark'] {
+  --color-bg: #2e3440;
+  --color-bg-secondary: #3b4252;
+  --color-bg-tertiary: #434c5e;
+  --color-text: #eceff4;
+  --color-text-secondary: #d8dee9;
+  --color-text-muted: #81a1c1;
+  --color-border: #4c566a;
+  --color-border-light: #434c5e;
+  --color-accent: #88c0d0;
+  --color-accent-hover: #8fbcbb;
+  --color-danger: #bf616a;
+  --color-toolbar-bg: #3b4252;
+  --color-toolbar-hover: #434c5e;
+  --color-toolbar-active: #4c566a;
+  --color-statusbar-bg: #3b4252;
+  --color-resize-handle: #4c566a;
+  --color-resize-handle-hover: #88c0d0;
+  --color-scrollbar: #4c566a;
+  --color-scrollbar-hover: #5e81ac;
+}

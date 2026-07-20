@@ -1,0 +1,46 @@
+/* === Sepia Theme (warm paper-like) === */
+
+:root,
+[data-theme='light'] {
+  --color-bg: #fbf0d9;
+  --color-bg-secondary: #f4e4c1;
+  --color-bg-tertiary: #e8d5a8;
+  --color-text: #5b4636;
+  --color-text-secondary: #7d6b5c;
+  --color-text-muted: #a39080;
+  --color-border: #d6c5a9;
+  --color-border-light: #e8d5a8;
+  --color-accent: #b5592c;
+  --color-accent-hover: #8b4513;
+  --color-danger: #c0392b;
+  --color-toolbar-bg: #f4e4c1;
+  --color-toolbar-hover: #e8d5a8;
+  --color-toolbar-active: #d6c5a9;
+  --color-statusbar-bg: #f4e4c1;
+  --color-resize-handle: #d6c5a9;
+  --color-resize-handle-hover: #b5592c;
+  --color-scrollbar: #d6c5a9;
+  --color-scrollbar-hover: #b5592c;
+}
+
+[data-theme='dark'] {
+  --color-bg: #3b3226;
+  --color-bg-secondary: #4a3f31;
+  --color-bg-tertiary: #5c4f3f;
+  --color-text: #e8dcc8;
+  --color-text-secondary: #c4b49a;
+  --color-text-muted: #9a8b74;
+  --color-border: #6b5c4a;
+  --color-border-light: #5c4f3f;
+  --color-accent: #e8965c;
+  --color-accent-hover: #f5b887;
+  --color-danger: #e74c3c;
+  --color-toolbar-bg: #4a3f31;
+  --color-toolbar-hover: #5c4f3f;
+  --color-toolbar-active: #6b5c4a;
+  --color-statusbar-bg: #4a3f31;
+  --color-resize-handle: #6b5c4a;
+  --color-resize-handle-hover: #e8965c;
+  --color-scrollbar: #6b5c4a;
+  --color-scrollbar-hover: #8a7660;
+}

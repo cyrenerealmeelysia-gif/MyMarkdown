@@ -1,44 +1,87 @@
-# Markdown
+# Markdown Editor
 
-基于 Vue 3 + Node.js 的 Markdown 编辑器，支持设为系统默认 `.md` 文件打开方式。
+基于 **Electron + Vue 3 + Vite** 的桌面 Markdown 编辑器。支持设为系统默认 `.md` 文件打开方式。
+
+## 功能
+
+- **编辑与预览**: 分屏 / 纯源码 / 纯预览 / WYSIWYG 四种模式
+- **语法高亮**: Shiki 代码块高亮（23 种语言）
+- **数学公式**: KaTeX 渲染（行内 + 块级）
+- **图表**: Mermaid 流程图、序列图等
+- **多标签页**: 同时打开多个文件，脏标记 + 关闭确认
+- **拼写检查**: 英文拼写错误红色波浪线 + 右键纠正建议
+- **搜索替换**: 支持正则、大小写敏感
+- **导出**: 自包含 HTML / PDF
+- **主题**: 亮色 / 暗色 / 护眼 / 北欧四套配色
+- **国际化**: 中文 / 英文界面切换
+- **自动保存**: 可配置间隔
+- **大纲侧边栏**: 标题导航 + 光标跟踪
+- **图片粘贴**: 剪贴板图片 → 本地保存 → 自动插入
+- **拖放打开**: 拖拽 .md 文件到窗口即可打开
+- **大文件优化**: >50KB 自动启用 Web Worker 解析
 
 ## 技术栈
 
-- **前端**: Vue 3 + Vite
-- **后端**: Node.js
-- **桌面壳**: Electron
+| 层 | 技术 |
+|------|------|
+| 桌面壳 | Electron 43 |
+| 前端 | Vue 3 (Composition API) + Vite 8 |
+| 编辑器 | CodeMirror 6 |
+| 解析 | markdown-it + 9 插件 |
+| 高亮 | Shiki (TextMate 语法) |
+| 数学 | KaTeX |
+| 图表 | Mermaid |
+| 状态 | Pinia |
+| 持久化 | electron-store |
+| 拼写 | typo-js (浏览器安全分支) |
+| 国际化 | 自定义 Composable |
 
-## 功能规划
+## 开发环境要求
 
-- Markdown 实时预览
-- 语法高亮
-- 文件打开 / 保存
-- 注册为系统默认 `.md` 打开方式
-- 主题切换
-
-## 项目结构
-
-```
-markdown/
-├── src/            # Vue 前端源码
-│   ├── App.vue
-│   ├── main.js
-│   ├── assets/
-│   └── components/
-├── public/         # 静态资源
-├── package.json
-└── vite.config.js
-```
-
-## 开发
+| 依赖 | 版本 |
+|------|------|
+| Node.js | `^20.19.0` 或 `>=22.12.0` |
+| npm | 随 Node.js 附带 |
+| Git | 版本控制 + CI/CD |
+| 操作系统 | Windows 10+ / macOS 12+ / Linux |
 
 ```sh
+git clone https://github.com/cyrenerealmeelysia-gif/MyMarkdown.git
+cd MyMarkdown
 npm install
-npm run dev
+npm run dev       # 启动 Vite + Electron (HMR)
 ```
 
 ## 构建
 
 ```sh
-npm run build
+npm run build           # 仅构建源码 → dist/
+npm run electron:build  # 构建 + 打包安装程序 → release/
 ```
+
+## 项目结构
+
+```
+├── src/                    # Vue 渲染进程
+│   ├── components/         # 组件 (layout/editor/sidebar/dialogs/common)
+│   ├── composables/        # Composable (markdown/spellCheck/keyboard/theme...)
+│   ├── stores/             # Pinia 状态 (document/editor/tabs/app)
+│   ├── utils/              # 工具 (parser/sanitizer/highlighter/math/mermaid...)
+│   ├── i18n/               # 国际化 (zh-CN/en)
+│   ├── workers/            # Web Worker (大文件解析)
+│   └── styles/             # 样式 (variables/editor/preview/global/themes)
+├── electron/               # Electron 主进程
+│   ├── main.js             # 入口 + 文件关联
+│   ├── preload.js          # contextBridge API
+│   ├── menu.js             # 应用菜单 (中英文切换)
+│   ├── store.js            # electron-store
+│   └── ipc/                # IPC 处理器 (file/prefs/window)
+├── builds/                 # 构建配置
+│   └── electron-builder.yml
+├── public/dictionaries/    # 拼写检查字典
+└── package.json
+```
+
+## 许可
+
+MIT

@@ -1,0 +1,123 @@
+/* ===== CodeMirror Theme Overrides ===== */
+
+.cm-editor {
+  height: 100%;
+  font-family: var(--cm-font-family, 'Cascadia Code', 'Fira Code', 'Consolas', monospace);
+  font-size: var(--cm-font-size, 16px);
+  line-height: 1.7;
+}
+
+.cm-editor .cm-scroller {
+  overflow: auto;
+}
+
+.cm-editor.cm-focused {
+  outline: none;
+}
+
+.cm-editor .cm-content {
+  padding: 16px;
+  caret-color: var(--color-text);
+}
+
+.cm-editor .cm-line {
+  padding: 0 4px;
+}
+
+/* Selection */
+.cm-editor .cm-selectionBackground,
+.cm-editor.cm-focused .cm-selectionBackground {
+  background: var(--color-accent) !important;
+  opacity: 0.3;
+}
+
+/* Cursor */
+.cm-editor .cm-cursor {
+  border-left-color: var(--color-text);
+}
+
+/* Active line */
+.cm-editor .cm-activeLine {
+  background-color: var(--color-bg-secondary);
+}
+
+/* Gutters */
+.cm-editor .cm-gutters {
+  background-color: var(--color-bg);
+  border-right: 1px solid var(--color-border-light);
+  color: var(--color-text-muted);
+}
+
+.cm-editor .cm-activeLineGutter {
+  background-color: var(--color-bg-secondary);
+}
+
+/* Markdown syntax tokens */
+.cm-editor .cm-header {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.cm-editor .cm-strong {
+  font-weight: 700;
+}
+
+.cm-editor .cm-emphasis {
+  font-style: italic;
+}
+
+.cm-editor .cm-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.cm-editor .cm-url {
+  color: var(--color-text-muted);
+}
+
+.cm-editor .cm-code {
+  background-color: var(--color-bg-secondary);
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+
+.cm-editor .cm-codeBlock {
+  background-color: var(--color-bg-secondary);
+}
+
+.cm-editor .cm-quote {
+  color: var(--color-text-secondary);
+  border-left: 3px solid var(--color-border);
+  padding-left: 8px;
+}
+
+.cm-editor .cm-list {
+  color: var(--color-accent);
+}
+
+.cm-editor .cm-hr {
+  color: var(--color-border);
+}
+
+.cm-editor .cm-strikethrough {
+  text-decoration: line-through;
+}
+
+/* ── Search match highlights ─────────────────────────────────── */
+
+.cm-editor .cm-search-match {
+  background-color: rgba(255, 196, 0, 0.35);
+  border-radius: 2px;
+}
+
+.cm-editor .cm-search-match-current {
+  background-color: rgba(255, 140, 0, 0.55);
+  border-radius: 2px;
+}
+
+/* ── Spell check ─────────────────────────────────────────────── */
+
+.cm-editor .cm-spell-error {
+  text-decoration: underline wavy #e74c3c;
+  text-underline-offset: 2px;
+}
